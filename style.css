@@ -1,0 +1,70 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: yellow;
+}
+
+.whatsapp{
+    position: relative;
+    background-color: #4ac955;
+    width: 30em;
+    height: 30em;
+    border: 2.5em solid white;
+    border-radius: 50%;
+}
+
+.whatsapp::before{
+    content: "";
+    position: absolute;
+    border: 8em solid;
+    border-color: transparent white transparent transparent;
+    transform: rotate(-50deg) rotateX(-50deg);
+    bottom: -11em;
+    left: -8.5em;
+}
+
+.whatsapp::after{
+    content: "";
+    position: absolute;
+    border: 8em solid;
+    border-color: transparent #4ac955 transparent transparent;
+    bottom: -8.5em;
+    left: -6.5em;
+    transform: rotate(-50deg) rotateX(-50deg);
+}
+
+.phone{
+    position: absolute;
+    border: 4em solid white;
+    border-radius: 49%;
+    height: 20em;
+    width: 20em;
+    left: 25%;
+    bottom: 22%;
+    border-color: transparent transparent white transparent;
+    transform: rotate(50deg);
+}
+
+.phone::before, .phone::after{
+    content: '';
+    position: absolute;
+    height: 6em;
+    width: 6.5em;
+    border-radius: 22% 22% 50% 50%;
+    background-color: white;
+}
+
+.phone::before{
+    top: 15.4em;
+    left: -.5em;
+    transform: rotate(11deg);
+}
+
+.phone::after{
+    top: 15em;
+    left: 14.4em;
+    transform: rotate(-11deg);
+}
+
